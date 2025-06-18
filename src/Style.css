@@ -1,0 +1,135 @@
+/* Glassmorphism + clean, elegant form design */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form container with glass effect */
+.form-container,
+.success-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  color: #fff;
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Inputs and selects */
+input,
+select {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  transition: background 0.3s;
+}
+
+input::placeholder,
+select {
+  color: #ddd;
+}
+
+input:focus,
+select:focus {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Phone inputs in row */
+.phone-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.phone-inputs input {
+  flex: 1;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #00c6ff;
+  background-image: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-image: linear-gradient(45deg, #0072ff, #00c6ff);
+}
+
+button:disabled {
+  background-color: #777;
+  cursor: not-allowed;
+}
+
+/* Show/Hide password toggle */
+button[type="button"] {
+  width: auto;
+  margin-top: -8px;
+  margin-bottom: 10px;
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+/* Error messages */
+.error {
+  color: #ff6b6b;
+  font-size: 0.85rem;
+  margin-top: -12px;
+  margin-bottom: 12px;
+}
+
+/* Success list and links */
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+  text-decoration: underline;
+}

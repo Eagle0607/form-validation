@@ -1,0 +1,35 @@
+/* index.css — base styles */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: #121212; /* fallback if gradient fails */
+  overflow-x: hidden;
+}
+
+/* Ensures app root stretches full screen */
+#root {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Remove default list and button outlines (optional) */
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.3s ease-in-out;
+}
